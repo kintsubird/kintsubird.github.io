@@ -5,6 +5,11 @@ ROOT_PATH = File.dirname(File.expand_path(__FILE__))
 desc 'as `rake run`'
 task :default => :run
 
+desc 'I need BEER'
+task :beer do
+  puts "🍺"
+end
+
 desc 'compile haml and scss'
 task :run => ['haml', 'scss']
 
